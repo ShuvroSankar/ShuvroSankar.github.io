@@ -45,3 +45,5 @@ h2{font-size:24px;margin:0 0 6px}.sub{color:var(--muted);margin:0 0 24px}
 .skills h3{font-size:14px;margin:0 0 6px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
 .skills p{margin:0;color:var(--muted);font-size:15px}
 footer{padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
+nav b a { color: var(--text); font-size: 16px; }
+nav b a:hover { text-decoration: none; }
