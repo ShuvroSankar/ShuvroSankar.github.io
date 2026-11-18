@@ -5,43 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Shuvro Sankar Sen – Data Engineer</title>
 <meta name="description" content="Data and analytics engineer: Azure, BigQuery, SQL, ETL validation. Embedded and IoT systems background.">
-<style>
-:root{--bg:#fafaf7;--surface:#fff;--text:#16181d;--muted:#5b616e;--line:#e3e1da;--accent:#0b6b5c;--accent-soft:#e2f1ee;
-color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1214;--surface:#171b1e;--text:#eceae4;--muted:#9aa1a9;--line:#2a3035;--accent:#5fd0bb;--accent-soft:#12302b;color-scheme:dark}}
-:root[data-theme="dark"]{--bg:#0f1214;--surface:#171b1e;--text:#eceae4;--muted:#9aa1a9;--line:#2a3035;--accent:#5fd0bb;--accent-soft:#12302b;color-scheme:dark}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-*,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 "Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.wrap{max-width:900px;margin:0 auto;padding:0 20px}
-a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
-nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
-nav .wrap{display:flex;gap:20px;align-items:center;height:52px;overflow-x:auto;white-space:nowrap}
-nav b{margin-right:auto;font-weight:700}nav a{color:var(--muted);font-size:14px}
-header{padding:72px 0 40px}
-.kicker{color:var(--accent);font-weight:600;font-size:14px;letter-spacing:.04em;text-transform:uppercase}
-h1{font-size:clamp(34px,6vw,52px);line-height:1.1;margin:8px 0 16px}
-.lead{font-size:18px;color:var(--muted);max-width:660px}
-.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:24px}
-.btn{border:1px solid var(--line);background:var(--surface);color:var(--text);padding:8px 14px;border-radius:8px;font-size:14px}
-.btn.p{background:var(--accent);border-color:var(--accent);color:var(--bg)}
-section{padding:40px 0;border-top:1px solid var(--line)}
-h2{font-size:24px;margin:0 0 6px}.sub{color:var(--muted);margin:0 0 24px}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(270px,1fr));gap:16px}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:20px;display:flex;flex-direction:column}
-.card h3{margin:0 0 8px;font-size:18px}.card p{margin:0 0 12px;color:var(--muted);font-size:15px}
-.card ul{margin:0 0 12px;padding-left:18px;color:var(--muted);font-size:15px}
-.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;margin-bottom:12px}
-.tag{background:var(--accent-soft);color:var(--accent);font-size:12px;padding:2px 9px;border-radius:99px;font-weight:600}
-.card .go{font-size:14px;font-weight:600}
-.note{background:var(--accent-soft);border-radius:12px;padding:16px 20px;margin-top:16px;color:var(--text);font-size:15px}
-.job{display:flex;flex-wrap:wrap;justify-content:space-between;gap:4px;margin-top:20px}
-.job h3{margin:0;font-size:17px}.job span{color:var(--muted);font-size:14px}
-.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
-.skills h3{font-size:14px;margin:0 0 6px;color:var(--accent);text-transform:uppercase;letter-spacing:.04em}
-.skills p{margin:0;color:var(--muted);font-size:15px}
-footer{padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);font-size:14px}
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav><div class="wrap"><b>Shuvro.</b><a href="#projects">Projects</a><a href="#systems">Embedded &amp; R&amp;D</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div></nav>
@@ -62,36 +26,91 @@ footer{padding:32px 0 48px;border-top:1px solid var(--line);color:var(--muted);f
 <p class="sub">Pipelines, warehouses and analytics. Each links to its repository.</p>
 <div class="grid">
 
-<div class="card"><h3>BigQuery Gross-to-Net Profitability Engine</h3>
+<div class="card">
+<a href="assets/gross-to-net.png"><img class="shot" loading="lazy" src="assets/gross-to-net.png" alt="Looker Studio dashboard: RFM segments, retention and category margins"></a>  
+<h3>BigQuery Gross-to-Net Profitability Engine</h3>
 <ul><li>Decoupled BigQuery pipeline of 8 modular SQL views at $0 compute cost.</li>
 <li>3-page interactive Looker Studio dashboard with sub-second loading.</li>
 <li>SQL attribution models for margin lost to promotions, and Blended ROAS tracking across platforms.</li></ul>
 <div class="tags"><span class="tag">BigQuery</span><span class="tag">SQL</span><span class="tag">Looker Studio</span><span class="tag">Python</span></div>
 <a class="go" href="https://github.com/ShuvroSankar/bq-ecommerce-gross-to-net-optimizer">View repository →</a></div>
-
-<div class="card"><h3>AgriSight: Cloud Agricultural Analytics</h3>
+<div class="card">
+<a href="assets/retention-dashboard.png"><img class="shot" loading="lazy" src="assets/retention-dashboard.png" alt="Looker Studio dashboard: RFM segments, retention and category margins"></a>
+<h3>E-Commerce Revenue &amp; Retention Engine</h3>
+<ul><li>BigQuery views using window functions (NTILE-based RFM scoring, cohort retention, product margins), so dashboard queries stay fast and cheap.</li>
+<li>Segments 66,444 customers across $8.17M in lifetime revenue.</li>
+<li>Built on the public theLook eCommerce dataset; Accessories leads at 59.92% gross margin.</li></ul>
+<div class="tags"><span class="tag">BigQuery</span><span class="tag">SQL</span><span class="tag">Window functions</span><span class="tag">Looker Studio</span></div>
+<a class="go" href="https://datastudio.google.com/reporting/79cc0f9c-1af3-4801-842c-519ff7ee9c04">Live dashboard →</a> ·
+<a class="go" href="https://github.com/ShuvroSankar/ECommerce-Revenue-Retention-Engine">Repository →</a></div>
+<div class="card">
+<a href="assets/argisight.png"><img class="shot" loading="lazy" src="assets/argisight.png" alt="Looker Studio dashboard: RFM segments, retention and category margins"></a>
+<h3>AgriSight: Cloud Agricultural Analytics</h3>
 <ul><li>End-to-end Azure pipeline (Data Factory and Databricks) ingesting and cleaning large agricultural yield and commodity datasets.</li>
 <li>ETL validation checks on data quality and transformation outputs.</li>
 <li>Analytical tables from spatial and market data for regional trend analysis.</li></ul>
 <div class="tags"><span class="tag">Azure Data Factory</span><span class="tag">Databricks</span><span class="tag">Blob Storage</span><span class="tag">SQL</span></div>
 <a class="go" href="https://github.com/ShuvroSankar/AgriSight">View repository →</a></div>
 
-<div class="card"><h3>IoT Smart Grid Analytics</h3>
+<div class="card">
+<a href="assets/iot-analytics.png"><img class="shot" loading="lazy" src="assets/iot-analytics.png" alt="Looker Studio dashboard: RFM segments, retention and category margins"></a>    
+<h3>IoT Smart Grid Analytics</h3>
 <ul><li>Dockerized Python pipeline streaming 130K+ smart-grid readings in micro-batches into BigQuery.</li>
 <li>Dashboarded in Looker Studio.</li></ul>
 <div class="tags"><span class="tag">Python</span><span class="tag">Docker</span><span class="tag">BigQuery</span><span class="tag">Looker Studio</span></div>
 <a class="go" href="https://github.com/ShuvroSankar/IoT_Smart_Grid_Analytics">View repository →</a></div>
 
-<div class="card"><h3>CloudPulse Pipeline</h3>
+<div class="card">
+<a href="assets/cloudpulse.png"><img class="shot" loading="lazy" src="assets/cloudpulse.png" alt="Looker Studio dashboard: RFM segments, retention and category margins"></a>    
+<h3>CloudPulse Pipeline</h3>
 <ul><li>Real-time observability and cloud-cost (FinOps) data pipeline in Python.</li></ul>
 <div class="tags"><span class="tag">Python</span><span class="tag">Streaming</span><span class="tag">FinOps</span></div>
 <a class="go" href="https://github.com/ShuvroSankar/cloudpulse-pipeline">View repository →</a></div>
 
-<div class="card"><h3>Commodity Price Forecasting</h3>
+<div class="card">
+<a href="assets/counterfactual_analysis.png"><img class="shot" loading="lazy" src="assets/counterfactual_analysis.png" alt="ExDark detections: raw, LLEN-only and DGFF"></a>  
+<h3>Commodity Price Forecasting</h3>
 <ul><li>Forecasting models for essential-commodity prices using price and import data.</li>
 <li>Automated SQL scripts clean historical import and export data before modeling.</li></ul>
 <div class="tags"><span class="tag">Python</span><span class="tag">SQL</span><span class="tag">Time series</span></div>
 <a class="go" href="https://github.com/ShuvroSankar/Time-series-Forecasting-of-Essential-Commodities">View repository →</a></div>
+
+</div></div></section>
+
+<section id="ml"><div class="wrap">
+<h2>Machine learning &amp; AI research</h2>
+<p class="sub">Applied models with measured results.</p>
+<div class="grid">
+
+<div class="card">
+<a href="assets/dgff-detections.png"><img class="shot" loading="lazy" src="assets/dgff-detections.png" alt="ExDark detections: raw, LLEN-only and DGFF"></a>
+<h3>DGFF: Detection-Guided Low-Light Enhancement</h3>
+<ul><li>Accepted at ICCA 2026 (ACM). Feeds features from a frozen YOLOv8n detector back into a U-Net enhancer during training, with no extra cost at inference.</li>
+<li>Detection mAP@0.5 on ExDark: 0.474 versus 0.408 on unenhanced images.</li>
+<li>LOL enhancement: 19.83 dB PSNR and 0.905 SSIM.</li></ul>
+<div class="tags"><span class="tag">PyTorch</span><span class="tag">YOLOv8</span><span class="tag">Computer vision</span></div>
+<a class="go" href="https://github.com/ShuvroSankar/DGFF">Repository →</a> 
+<a class="go" href="https://huggingface.co/abbaab/DGFF">Model weights →</a></div>
+
+<div class="card">
+<a href="assets/hybprom-app.png"><img class="shot" loading="lazy" src="assets/hybprom-app.png" alt="HybProm Streamlit app predicting a bacterial promoter"></a>
+<h3>HybProm: Bacterial Promoter Predictor</h3>
+<ul><li>Two-stage XGBoost on 171 features (DNA duplex stability, k-mers, motif scores) with SHAP-based feature selection.</li>
+<li>81.4% accuracy and 0.895 AUC on a balanced test set of bacterial sequences.</li>
+<li>Near-chance on archaeal sequences (53.5%), which shows it learned bacterial-specific signals.</li>
+<li>Deployed as a live web app.</li></ul>
+<div class="tags"><span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Streamlit</span></div>
+<a class="go" href="https://hybprom-bacterial-promoter-predictor.streamlit.app/">Live app →</a> 
+<a class="go" href="https://github.com/ShuvroSankar/bacterial_promoter_prediction_pipeline">Repository →</a></div>
+
+<div class="card">
+<a href="assets/lakexg-shap.png"><img class="shot" loading="lazy" src="assets/lakexg-shap.png" alt="LakeXG SHAP feature importance"></a>
+<h3>LakeXG: Chlorophyll-a Prediction in Inland Lakes</h3>
+<ul><li>Per-lake XGBoost models on high-frequency sensor data from six US lakes, tuned with time-series cross-validation.</li>
+<li>R² from 0.45 to 0.95 against in-situ measurements.</li>
+<li>SHAP analysis ranks fluorescent dissolved organic matter (fDOM) as the top predictor.</li></ul>
+<div class="tags"><span class="tag">XGBoost</span><span class="tag">SHAP</span><span class="tag">Time series</span></div>
+<a class="go" href="https://github.com/ShuvroSankar/LakeXG">Repository →</a></div>
 
 </div></div></section>
 
