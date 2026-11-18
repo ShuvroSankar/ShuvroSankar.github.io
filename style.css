@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  font: 16px/1.6 system-ui, sans-serif;
+  color: #16181d;
+  background: #fafaf7;
+}
+header {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 72px 20px 40px;
+}
+.kicker { color: #0b6b5c; font-weight: 600; text-transform: uppercase; font-size: 14px; }
+h1 { font-size: clamp(32px, 6vw, 52px); line-height: 1.1; margin: 8px 0 16px; }
+.lead { font-size: 18px; color: #5b616e; max-width: 660px; }
